@@ -1,0 +1,129 @@
+/* ใช้ฟอนต์ Poppins จาก Google Fonts */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Heading */
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #555;
+    margin: 20px 0;
+}
+
+/* Camera Feed */
+img {
+    max-width: 100%;
+    width: 600px;
+    height: auto;
+    margin: 1rem 0;
+    border-radius: 8px;
+    border: none;
+}
+
+/* Button Styling */
+button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Mic Control Button */
+#micToggle.on {
+    background-color: #4caf50;
+    color: white;
+}
+
+#micToggle.off {
+    background-color: #f44336;
+    color: white;
+}
+
+/* Capture Button */
+#captureBtn {
+    background-color: #2196f3;
+    color: white;
+}
+
+/* Notification Bell */
+#notificationBell {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #ffcc00;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#notificationBell span {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: red;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 2px 6px;
+}
+
+/* Notification List */
+#notificationList {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    width: 300px;
+    max-height: 400px;
+    overflow-y: auto;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+#notificationList ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#notificationList li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    font-size: 0.9rem;
+}
+
+#notificationList li:last-child {
+    border-bottom: none;
+}
